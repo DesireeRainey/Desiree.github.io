@@ -6,7 +6,7 @@
 * http://www.opensource.org/licenses/mit-license.php
 * 12/29/2014
 */
-
+/*#234170 navy blue color pink also used*/
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -25,14 +25,14 @@
 - Media Queries
 */
 .project-three {
-  background-color: pink;
+  background-color: #234170;
   border-bottom: 1px solid #ddd;
   text-align: center;
 }
 
 .project-two {
   border-bottom: 1px solid #ddd;
-  background-color: white;
+  background-color: pink;
 }
 
 /* Grid
@@ -349,7 +349,7 @@ td:last-child {
 button,
 .button {
   margin-bottom: 1rem; 
-  background-color: #11DFC7;
+  background-color: #234170 ;
   color: white;
 }
 input,
