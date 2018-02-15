@@ -33,6 +33,10 @@
   margin-bottom: 1.2rem;
 }
 
+.section-description {
+  text-align: left;
+}
+
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
