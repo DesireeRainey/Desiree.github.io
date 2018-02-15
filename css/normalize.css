@@ -5,59 +5,80 @@
 .about-section {
   height: 300px !important;
 }
-
-/*Nav bar*/
-
+ /*Responsive Nav Bar*/
 nav {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 50px;
-  padding: 10px ;
-  box-sizing: border-box;
-  transition: .3s;
-  z-index: 1;
-}
-
-nav.pink{
-  background: rgba(35,65,112,0.4);
-  height: 90px;
-  padding: 10px ;
-}
-
-nav .logo {
-  padding: 22px 20px;
-  padding: 10px;
-}
-
-nav.pink .logo{
-  color: #fff;
 }
 
 nav ul {
   list-style: none;
-  float: right;
+  background: rgba(35,65,112,0.5);
+  overflow: hidden;
+  color: #fff;
+  text-align: right;
   margin: 0;
-  padding: 0;
-  display: flex;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
 }
 
 nav ul li .navbar {
-  line-height: 50px;
-  color: #151515;
-  padding: 12px 30px;
   text-decoration: none;
-  text-transform: uppercase;
-  transition: .3s;
-}
-
-nav.pink ul li .navbar {
   color: #fff;
+  font-size: 20px;
 }
 
-nav ul li .navbar:focus {
-  outline: none;
+.cheeseburger-icon {
+  width: 100%;
+  background: rgba(35,65,112,0.5);
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+@media(max-width: 550px){
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top:16px;
+  }
+
+  nav ul {
+    max-height: 0px;
+    background: #000;
+  }
+
+  nav.black ul {
+    background: #000;
+  }
+
+  .showing {
+    max-height: 20em;
+  }
+  .navbar {
+    z-index: 1;
+  }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+  }
+
+  .cheeseburger-icon {
+    display: block;
+  }
 }
 
 /*Project pictures*/
