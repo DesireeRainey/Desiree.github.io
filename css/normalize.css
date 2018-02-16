@@ -1,3 +1,4 @@
+/*custom styling*/
 #home {
   height: 300px !important;
 }
@@ -19,10 +20,12 @@ nav ul {
   text-align: right;
   margin: 0;
   transition: 1s;
+  z-index: 1;
 }
 
 nav.black ul {
-  background: rgba(35,65,112,0.5);;
+  background: rgba(35,65,112,0.5);
+  z-index: 1;
 }
 
 nav ul li {
@@ -34,6 +37,10 @@ nav ul li .navbar {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
+}
+
+.menu {
+  z-index: 1;
 }
 
 .cheeseburger-icon {
@@ -113,15 +120,23 @@ nav ul li .navbar {
   padding: 8rem 0 7rem;
   text-align: center;
 }
-.section-heading,
-.section-description {
+.section-heading, 
+.section-description{
   margin-bottom: 1.2rem;
   color: white !important;
 }
 
-.section-description {
+.section-description, .section-heading-two,
+.section-description-two{
   text-align: left;
 }
+
+.section-heading-two,
+.section-description-two {
+  margin-bottom: 1.2rem;
+  color: black !important;
+}
+
 
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -217,34 +232,6 @@ nav ul li .navbar {
   }
 }
 
-/* Bigger than 1000 */
-@media (min-width: 1000px) {
-  .section {
-    padding: 20rem 0 19rem;
-  }
-  .hero {
-    padding: 22rem 0;
-  }
-  .hero-heading {
-    font-size: 3.0rem;
-  }
-  .phone {
-    top: -16rem;
-    max-height: 615px;
-  }
-  .phone + .phone {
-    top: -14rem;
-    max-height: 570px;
-  }
-}
-
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
 
 html {
   font-family: sans-serif; /* 1 */
@@ -268,15 +255,6 @@ body {
   box-sizing: border-box;
 }
 
-/* HTML5 display definitions
-   ========================================================================== */
-
-/**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11
- * and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
- */
 
 article,
 aside,
