@@ -15,14 +15,14 @@ nav ul {
   list-style: none;
   background: rgba(35,65,112,0.5);
   overflow: hidden;
-  color: #fff;
+  color: rgba(35,65,112,0.5);;
   text-align: right;
   margin: 0;
   transition: 1s;
 }
 
 nav.black ul {
-  background: #000;
+  background: rgba(35,65,112,0.5);;
 }
 
 nav ul li {
@@ -56,11 +56,11 @@ nav ul li .navbar {
 
   nav ul {
     max-height: 0px;
-    background: #000;
+    background: rgba(35,65,112,0.5);
   }
 
   nav.black ul {
-    background: #000;
+    background: rgba(35,65,112,0.5);
   }
 
   .showing {
@@ -116,6 +116,7 @@ nav ul li .navbar {
 .section-heading,
 .section-description {
   margin-bottom: 1.2rem;
+  color: white !important;
 }
 
 .section-description {

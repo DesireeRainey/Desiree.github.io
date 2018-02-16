@@ -1,8 +1,6 @@
 
-
-
- $(document).ready(function(){
- 	$(".navbar").("click", function(){
+$(document).ready(function(){
+ 	$(".navbar").on("click", function(){
  		$("nav ul").toggleClass("showing");
  	});
  });
